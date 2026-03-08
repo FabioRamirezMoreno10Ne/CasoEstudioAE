@@ -7,12 +7,20 @@ Arquitectura Empresarial.
 
 ## Roles del Equipo
 
-  Rol                    Nombre   Responsabilidad
-  ---------------------- -------- -----------------
-  Enterprise Architect            
-  Solution Architect              
-  Data Architect                  
-  Security Architect              
+<table>
+<thead>
+<tr>
+<th>Rol</th>
+<th>Nombre</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Enterprise Architect</td><td></td><td></td></tr>
+<tr><td>Solution Architect</td><td></td><td></td></tr>
+<tr><td>Data Architect</td><td></td><td></td></tr>
+</tbody>
+</table>
 
 ## Modelo Organizacional
 
@@ -21,6 +29,6 @@ empresa.
 
 ## Necesidades de Recursos
 
--   Presupuesto estimado:
--   Herramientas necesarias:
--   Personal adicional:
+- Presupuesto estimado:
+- Herramientas necesarias:
+- Personal adicional:

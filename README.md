@@ -11,21 +11,53 @@ estrategia, procesos, datos, aplicaciones y tecnología**.
 
 ------------------------------------------------------------------------
 
-# Caso de Estudio
+ Caso de Estudio: FinData Credit
+
+## 1. Contexto
+
+**FinData Credit** es una **Fintech B2C** especializada en microcréditos digitales mediante análisis avanzado de datos e integración con múltiples fuentes financieras (**Open Banking**).
+
+A medida que la empresa creció, aumentó la complejidad operativa, el volumen de datos, las integraciones y los riesgos regulatorios. La infraestructura inicial, diseñada para un **MVP**, comenzó a mostrar limitaciones en:
+
+- Escalabilidad
+- Seguridad
+- Alineación estratégica
+
+Ante esta situación, la dirección decidió adoptar un enfoque formal de **Arquitectura Empresarial basado en TOGAF** para asegurar un crecimiento sostenible y coherente.
 
 La empresa propone una **Fintech digital** que ofrece:
 
--   Microcréditos rápidos
--   Evaluación automática de riesgo
--   Integración con múltiples fuentes de datos financieros
--   Experiencia digital completa
+- Microcréditos rápidos
+- Evaluación automática de riesgo
+- Integración con múltiples fuentes de datos financieros
+- Experiencia digital completa
 
-El sistema debe permitir **tomar decisiones de crédito en tiempo real**
-mediante analítica avanzada.
+El sistema debe permitir **tomar decisiones de crédito en tiempo real** mediante **analítica avanzada**.
 
 ------------------------------------------------------------------------
 
-# Flujo del Proceso de Negocio
+# 2. Desafíos Iniciales
+
+- Integraciones tecnológicas sin estándares comunes.
+- Modelos analíticos aislados entre equipos.
+- Inconsistencias en bases de datos.
+- Procesos manuales ocultos dentro de flujos automatizados.
+- Dificultades para cumplir regulaciones financieras.
+- Incremento del riesgo operacional y tecnológico.
+
+------------------------------------------------------------------------
+
+# 3. Objetivos del Proyecto de Arquitectura Empresarial
+
+- Alinear la estrategia de negocio con las capacidades tecnológicas.
+- Estandarizar procesos de integración y gobierno de datos.
+- Diseñar una arquitectura escalable y segura.
+- Reducir riesgos operacionales y regulatorios.
+- Implementar una gobernanza arquitectónica formal.
+
+------------------------------------------------------------------------
+
+# 4. Flujo del Proceso de Negocio
 
 ``` mermaid
 flowchart TD
@@ -50,143 +82,7 @@ H -->|Rechazado| J[Notificación al cliente]
 I --> K[Registro de obligación financiera]
 ```
 
-------------------------------------------------------------------------
 
-# Arquitectura Empresarial
 
-La arquitectura se organiza en cuatro dominios principales:
-
--   Arquitectura de Negocio
--   Arquitectura de Datos
--   Arquitectura de Aplicaciones
--   Arquitectura Tecnológica
-
-------------------------------------------------------------------------
-
-# Arquitectura de Negocio
-
-Define los procesos clave del negocio.
-
-``` mermaid
-flowchart LR
-
-A[Adquisición de Cliente] --> B[Solicitud de Crédito]
-
-B --> C[Evaluación de Riesgo]
-
-C --> D[Aprobación de Crédito]
-
-D --> E[Desembolso]
-
-E --> F[Gestión de Crédito]
-```
-
-------------------------------------------------------------------------
-
-# Arquitectura de Datos
-
-Describe el flujo de información dentro del sistema.
-
-``` mermaid
-flowchart TD
-
-A[Datos del Cliente] --> D[Lago de Datos]
-
-B[Datos Bancarios] --> D
-C[Datos de Bureaus] --> D
-
-D --> E[Procesamiento de Datos]
-
-E --> F[Modelo de Scoring]
-
-F --> G[Resultado de Evaluación]
-```
-
-------------------------------------------------------------------------
-
-# Arquitectura de Aplicaciones
-
-Componentes principales del sistema.
-
-``` mermaid
-flowchart TD
-
-A[Aplicación Móvil] --> B[API Gateway]
-
-B --> C[Servicio de Identidad]
-B --> D[Servicio de Integración de Datos]
-B --> E[Motor de Scoring]
-B --> F[Servicio de Créditos]
-
-E --> G[Base de Datos Analítica]
-
-F --> H[Base de Datos Transaccional]
-```
-
-------------------------------------------------------------------------
-
-# Arquitectura Tecnológica
-
-Infraestructura que soporta la solución.
-
-``` mermaid
-flowchart TD
-
-A[Usuarios] --> B[Internet]
-
-B --> C[API Gateway]
-
-C --> D[Servicios Backend]
-
-D --> E[Contenedores / Microservicios]
-
-E --> F[Base de Datos]
-
-E --> G[Motor de Analítica]
-
-F --> H[Infraestructura Cloud]
-G --> H
-```
-
-------------------------------------------------------------------------
-
-# Estructura del Repositorio
-
-    ea-fintech-togaf
-    │
-    ├── preliminary
-    ├── architecture-vision
-    ├── business-architecture
-    ├── data-architecture
-    ├── application-architecture
-    ├── technology-architecture
-    ├── diagrams
-    └── models
-
-------------------------------------------------------------------------
-
-# Framework utilizado
-
-Este proyecto sigue el **Architecture Development Method (ADM)** de
-TOGAF:
-
-1.  Preliminary
-2.  Architecture Vision
-3.  Business Architecture
-4.  Information Systems Architecture
-5.  Technology Architecture
-6.  Opportunities & Solutions
-7.  Migration Planning
-8.  Implementation Governance
-9.  Architecture Change Management
-
-------------------------------------------------------------------------
-
-# Objetivo del Proyecto
-
-Diseñar una arquitectura que permita:
-
--   Decisiones crediticias en tiempo real
--   Integración eficiente de datos
 -   Escalabilidad del sistema
 -   Seguridad y cumplimiento regulatorio

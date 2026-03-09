@@ -7,10 +7,11 @@ impactados por la Arquitectura Empresarial.
 
 ## Información del Proyecto
 
-- Nombre del proyecto:
-- Organización:
-- Fecha:
-- Autor(es):
+- Nombre del proyecto: Findata
+- Organización: CECAR
+- Descripcion: Fitech (finanzas y tecnologia) de microcreditos
+- Fecha:2026
+- Autor(es):Fabio Ramirez
 
 ## Core Enterprise Units
 
